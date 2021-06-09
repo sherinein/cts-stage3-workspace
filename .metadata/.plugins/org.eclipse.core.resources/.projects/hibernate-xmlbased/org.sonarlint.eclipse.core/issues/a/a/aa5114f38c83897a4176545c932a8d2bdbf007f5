@@ -1,0 +1,15 @@
+
+e
+java:S1874"-Remove this use of "Query"; it is deprecated.(‹ş€¿şÿÿÿÿ8İò§®/H¸RMINORZ
+CODE_SMELL
+h
+java:S1905"0Remove this unnecessary cast to "StudentEntity".(³™€øÿÿÿÿÿ8ï»Ã®/H¹RMINORZ
+CODE_SMELL
+s
+java:S2095"EUse try-with-resources or close this "Session" in a "finally" clause.(ÿÌéÁ8İò§®/HºRBLOCKERZBUG
+k	java:S106"9Replace this use of System.out or System.err by a logger.(€³Âı8åá®®/H»RMAJORZ
+CODE_SMELL
+p	java:S106"9Replace this use of System.out or System.err by a logger.(¿Ô»ªùÿÿÿÿ8‡ôÖ®/H¼RMAJORZ
+CODE_SMELL
+s	java:S125"<This block of commented-out lines of code should be removed.(óÔ»äøÿÿÿÿ8ø»°/H½RMAJORZ
+CODE_SMELL

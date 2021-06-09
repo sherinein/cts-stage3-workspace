@@ -1,0 +1,10 @@
+package com.cts.employee.respository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+
+import com.cts.employee.entity.Employee;
+@EnableJpaRepositories
+public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
+
+}

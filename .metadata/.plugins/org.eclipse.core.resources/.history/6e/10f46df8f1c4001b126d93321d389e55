@@ -1,0 +1,5 @@
+package com.cts.hibernate.dao;
+
+public interface StudentDaoImpl implements StudentDao {
+
+}

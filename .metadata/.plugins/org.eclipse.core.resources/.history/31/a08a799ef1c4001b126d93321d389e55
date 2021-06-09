@@ -1,0 +1,11 @@
+package com.cts.hibernate.entity;
+
+public class StudentEntity {
+	
+	private int sid;
+	private String studentName;
+	private String department;
+	private String email;
+	private String mobileNumber;
+
+}

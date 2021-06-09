@@ -1,0 +1,23 @@
+package com.cts.employee.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="employee")
+public class Employee {
+	@Id
+	@GeneratedValue
+	private int empid;
+	@Column(name="emp_name")
+	private String empName;
+	private String designation;
+	private double salary;
+	@Column(name="mobile_number")
+	private String mobileNumber;
+	private String email;
+	// getter & setter 
+}

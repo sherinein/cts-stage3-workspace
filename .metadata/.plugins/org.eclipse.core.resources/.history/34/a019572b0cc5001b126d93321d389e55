@@ -1,0 +1,41 @@
+package com.cts.hibernate.dao;
+
+import javax.persistence.EntityManager;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+import org.jboss.logging.Logger;
+
+import com.cts.hibernate.config.HibernateConfig;
+import com.cts.hibernate.entity.StudentEntity;
+
+public class StudentDaoImpl implements StudentDao {
+	public  Logger logger=Logger.getLogger(StudentDaoImpl.class);
+	private Transaction transaction;
+	//private EntityManager manager;
+	@Override
+	public void saveStudent(StudentEntity student) {
+	
+		try(Session session=HibernateConfig.getSessionFactory().openSession()){
+			logger.info("session object is created");
+			
+			transaction=session.beginTransaction();
+			logger.info("transaction is created");
+			session.save(student);
+			transaction.commit();
+			logger.info("entity object is persisted");
+			session.close();	
+		}catch(Exception e) {
+			if(transaction!=null) {
+				transaction.rollback();
+				logger.info("Transaction is rollbacked");
+			}
+			e.printStackTrace();
+		}
+		
+		
+		
+	}
+
+	
+}

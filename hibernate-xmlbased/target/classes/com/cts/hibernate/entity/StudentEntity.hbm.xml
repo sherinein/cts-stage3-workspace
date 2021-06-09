@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+<hibernate-mapping package="com.cts.hibernate.entity">
+
+<class name="StudentEntity" table="student">
+	<id name="sid" type="int" column="sid">
+		<generator class="assigned"/>
+	</id>
+	<property name="studentName" type="string" column="student_name"/>
+	<property name="department"/>
+	<property name="email"/>
+	<property name="mobileNumber" column="mobile_number"/>
+	
+</class>
+
+</hibernate-mapping>
