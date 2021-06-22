@@ -1,3 +1,5 @@
 
-ˆ	java:S116"QRename this field "LOGGER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶•¤Éÿÿÿÿÿ8É¾ÂÐž/H¯RMINORZ
+ˆ	java:S116"QRename this field "LOGGER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶•¤Éÿÿÿÿÿ8É¾ÂÐž/H÷RMINORZ
+CODE_SMELL
+n	java:S1250"<This block of commented-out lines of code should be removed.(Ÿ›ï8·Ù˜¤Ÿ/HøRMAJORZ
 CODE_SMELL

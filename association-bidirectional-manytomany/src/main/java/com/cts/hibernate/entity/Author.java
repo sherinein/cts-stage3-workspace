@@ -1,6 +1,6 @@
 package com.cts.hibernate.entity;
 
-import java.awt.print.Book;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,7 +24,7 @@ public class Author {
 	private int version;
 
 	private String firstName;
-
+	
 	private String lastName;
 
 	@ManyToMany(mappedBy="authors")

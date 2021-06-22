@@ -1,10 +1,10 @@
 
 …
-java:S1104"RMake logger a static final constant or non-public and provide accessors if needed.(şÌ¨8õ”Ç«/H³RMINORZ
-CODE_SMELL
-_
-java:S1444",Make this "public static logger" field final(şÌ¨8õ”Ç«/H´RMINORZ
+java:S1104"RMake logger a static final constant or non-public and provide accessors if needed.(şÌ¨8õ”Ç«/Hº	RMINORZ
 CODE_SMELL
 r
-java:S1118":Add a private constructor to hide the implicit public one.(¾Şéşÿÿÿÿÿ8ÉñÁ«/HµRMAJORZ
+java:S1118":Add a private constructor to hide the implicit public one.(¾Şéşÿÿÿÿÿ8ÉñÁ«/H»	RMAJORZ
+CODE_SMELL
+_
+java:S1444",Make this "public static logger" field final(şÌ¨8õ”Ç«/H¼	RMINORZ
 CODE_SMELL

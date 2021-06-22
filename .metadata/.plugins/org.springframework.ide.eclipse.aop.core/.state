@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
+<aop-project name="flight-management"/>
+<aop-project name="springboot-rest"/>
+<aop-project name="association-bidirectional-onetoone"/>
 <aop-project name="springboot-hibernate-demo"/>
+<aop-project name="association-bidirectional-manytoone"/>
+<aop-project name="association-bidirectional-manytomany"/>
+<aop-project name="association-unidirectional-onetomany"/>
+<aop-project name="springboot-swagger"/>
 </aop-reference-model>

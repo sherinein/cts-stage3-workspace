@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.cts.employee.entity.Employee;
+import com.cts.employee.respository.EmployeeDao;
 import com.cts.employee.respository.EmployeeRepository;
 @Transactional
 @Service
@@ -18,7 +19,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 	private final Logger LOGGER=LoggerFactory.getLogger(EmployeeServiceImpl.class);
 	@Autowired
 	private EmployeeRepository employeeRepository;
-	
+	@Autowired
+	private EmployeeDao employeeDao;
 	@Override
 	public List<Employee> findAll() {
 		return employeeRepository.findAll();
@@ -42,8 +44,19 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 	@Override
 	public void deleteById(int theId) {
-		employeeRepository.deleteById(theId);
-		
+		// Spring Data JPA
+		//employeeRepository.deleteById(theId); 
+		// Hiberante 
+		employeeDao.deleteById(theId);
 	}
+
+	@Override
+	public List<Employee> getEmployeeByDesignation(String designation) {
+		
+		return employeeDao.getEmployeeByDesignation(designation);
+	}
+	
+	
+	
 
 }

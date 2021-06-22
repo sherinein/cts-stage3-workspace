@@ -1,5 +1,0 @@
-package com.cts.employee.service;
-@Service
-public interface EmployeeService {
-
-}

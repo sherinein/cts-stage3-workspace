@@ -2,8 +2,10 @@ package com.cts.hibernate.entity;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -24,7 +26,7 @@ public class Book {
 
 	private String title;
 
-	@ManyToMany
+	@ManyToMany(cascade = {CascadeType.ALL},fetch=FetchType.EAGER)
 	@JoinTable(name = "book_author", 
 				joinColumns = { @JoinColumn(name = "fk_book") }, 
 				inverseJoinColumns = { @JoinColumn(name = "fk_author") })

@@ -1,6 +1,0 @@
-package com.cts.employee.respository;
-
-
-public interface EmployeeRepository  {
-
-}
