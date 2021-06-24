@@ -70,6 +70,9 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="D:\stage3-workspace\spring-cloud-oauth2"/>
+			<item value="D:\stage3-workspace\springboot-springsecurity"/>
+			<item value="D:\stage3-workspace\springboot-security-demo"/>
 			<item value="D:\stage3-workspace\springboot-swagger"/>
 		</list>
 		<list key="projectNameTemplate">
